@@ -8,7 +8,7 @@ const Home = () => {
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios(
-                'http://localhost:8000/collections'
+                'https://dj-collection-api.onrender.com/collections'
             );
 
             setData(result.data);
